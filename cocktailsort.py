@@ -14,7 +14,7 @@ def bubblecompare(t, unsorted:list, i:int):
 def cocktailsort(unsorted: list):
     step = 0
     history = []
-    history.append(unsorted[:])
+    history.append(list(unsorted))
 
     done = False
     i=0
@@ -37,7 +37,7 @@ def cocktailsort(unsorted: list):
             i = i + 1
 
         step = step+1
-        history.append(unsorted[:])
+        history.append(list(unsorted))
         #print(history)
 
     return history

@@ -4,8 +4,9 @@ from collections import deque
 import matplotlib
 from matplotlib import animation
 from matplotlib import pyplot as plt
-
+import cocktailsort
 import insertionsort
+import morebubbles
 
 
 def randomize_list(n):
@@ -29,8 +30,8 @@ if __name__ == "__main__":
     global sequence
     # sequence = bubblesort.bubblesort(randomize_list(n))
     # sequence = cocktailsort.cocktailsort(randomize_list(n))
-
-    sequence = insertionsort.insertionsort(randomize_list(n))
+    #sequence = insertionsort.insertionsort(randomize_list(n))
+    sequence = morebubbles.bubblysort(randomize_list(n))
     #for line in sequence:
     #    print(len(line))
     # print(len(sequence))
